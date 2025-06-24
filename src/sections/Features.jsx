@@ -7,7 +7,7 @@ const Features = () => {
     <section>
       <Element name="features">
         <div className="container">
-          <div className="relative flex md:flex-wrap flex-nowrap border-2 border-s3 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3 scale-[90%]">
+          <div className="relative flex md:flex-wrap flex-nowrap border-2 border-s3 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3 scale-[80%]">
             {/* Feature Cards */}
             {features.map(({ id ,caption, title, text, button }) => (
               <div

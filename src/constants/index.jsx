@@ -353,28 +353,23 @@ export const links = [
 ];
 
 export const socials = [
+  
   {
     id: "0",
-    title: "x",
-    icon: "/images/socials/x.svg",
-    url: "#",
+    title: "Whatsapp",
+    icon: "/images/socials/whatsapp.svg",
+    url: "https://api.whatsapp.com/send/?phone=9363538468&text&type=phone_number&app_absent=0",
   },
   {
     id: "1",
-    title: "Threads",
-    icon: "/images/socials/threads.svg",
-    url: "#",
+    title: "Instagram",
+    icon: "/images/socials/",
+    url: "https://www.instagram.com/techinta_/",
   },
   {
     id: "2",
-    title: "Instagram",
-    icon: "/images/socials/instagram.svg",
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Discord",
-    icon: "/images/socials/discord.svg",
-    url: "#",
+    title: "LinkedIn",
+    icon: "/images/socials/",
+    url: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFV7kXGyNhppgAAAZeisS2Qm9A5M8RExUEMQ4sT9r7LIxyBK-xzExJJEPSVZYM04aN2iH8AmzDAkolrgwFTfmFz3YVxuAPJ51ph99SDop2-JK7Y4iUlF36p0SoJjnwbiO7db3k=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ftechinta%2F",
   },
 ];

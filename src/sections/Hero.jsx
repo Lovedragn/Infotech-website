@@ -3,7 +3,7 @@ import Button from "../components/Button.jsx";
 
 const Hero = () => {
   return (
-    <section className="relative pt-40 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32 scale-[90%]">
+    <section className="relative pt-20 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-22 max-md:pb-32 scale-[80%]">
       <Element name="hero">
         <div className="container">
           <div className="relative z-2 max-w-512 max-lg:max-w-388 md:mt-20 mt-0">

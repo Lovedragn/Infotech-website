@@ -8,16 +8,16 @@ const Faq = () => {
   return (
     <section>
       <Element name="faq" className="relative">
-        <div className="container relative z-2 py-28 mt-[10rem]">
-          <div className="text-center w-full h3  max-lg:max-w-md mb-7 text-p4">
+        <div className="container relative z-2 pt-22 pb-12 mt-[5rem]">
+          <div className="text-center w-full h3 max-lg:max-w-md mb-2 text-p4">
               Frequently Asked Questions
 
           </div>
 
-          <div className="faq-line_after w-0.5 h-full absolute left-[calc(50%-1px)] top-30 -z-1 bg-s2" />
+          <div className="faq-line_after w-0.5 h-full absolute left-[calc(50%-1px)] top-20 -z-1 bg-s2" />
         </div>
 
-        <div className="faq-glow_before relative z-2 border-2 border-s2 bg-s1">
+        <div className="faq-glow_before relative z-2 border-2 border-s2 bg-s1 scale-75">
           <div className="container flex gap-10 max-lg:block">
             <div className="rounded-half absolute -top-10 left-[calc(50%-40px)] z-4 flex size-20 items-center justify-center border-2 border-s2 bg-s1">
               <img src="/favicon.png" alt="logo" className="size-1/2 saturate-100 brightness-150"   />

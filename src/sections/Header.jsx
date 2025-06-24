@@ -1,8 +1,6 @@
-import { Link as LinkScroll } from "react-scroll";
-
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
-import Faq from "./Faq.jsx";
 
 const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -10,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setHasScrolled(window.scrollY > 32);
+      setHasScrolled(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,31 +18,31 @@ const Header = () => {
     };
   }, []);
 
-  const NavLink = ({ title }) => (
-    <LinkScroll
-      onClick={() => setIsOpen(false)}
-      to={title}
-      offset={-100}
-      spy
-      smooth
-      activeClass="nav-active"
-      className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
-    >
-      {title}
-    </LinkScroll>
-  );
+  const NavLink = ({ title }) => {
+    const path = title.toLowerCase().replace(/\s+/g, "-");
+
+    return (
+        <Link
+            to={`/${path}`} // navigates to /faq or /contact-us
+            onClick={() => setIsOpen(false)}
+            className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
+        >
+          {title}
+        </Link>
+    );
+  };
 
   return (
     <header
       className={clsx(
         "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
-        hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px] md:rounded-full md:scale-[90%]",
+        hasScrolled && "py-2 bg-[#00000f86] backdrop-blur-[16px] md:rounded-full md:scale-[75%]",
       )}
     >
       <div className="container flex h-14 items-center max-lg:px-5">
-        <a className="lg:hidden flex-1 cursor-pointer z-2">
+        <Link to="/" className="lg:hidden flex-1 cursor-pointer z-2">
           <img src="/favicon.png" width={115} height={55} alt="logo" className="scale-[40%]  brightness-150 "/>
-        </a>
+        </Link>
 
         <div
           className={clsx(
@@ -62,11 +60,7 @@ const Header = () => {
                 </li>
 
                 <li className="nav-logo">
-                  <LinkScroll
-                    to="hero"
-                    offset={-250}
-                    spy
-                    smooth
+                  <Link to="/"
                     className={clsx(
                       "max-lg:hidden brightness-150 transition-transform duration-500 cursor-pointer",
                     )}
@@ -78,12 +72,11 @@ const Header = () => {
                       height={55}
                       alt="logo"
                     />
-                  </LinkScroll>
+                  </Link>
                 </li>
 
                 <li className="nav-li">
-                    <NavLink title="faq" />
-
+                    <NavLink  title="faq" />
                   <div className="dot" />
                   <NavLink title="Contact Us" />
                 </li>

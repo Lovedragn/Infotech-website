@@ -63,61 +63,25 @@ export const details = [
 export const faq = [
   {
     id: "0",
-    question: "How easy is it to setup Xora?",
+    question: "How long does it take to develop an e-commerce website?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Depending on the features and requirements, the development timeline typically ranges between 30 to 50 working days.",
   },
   {
     id: "1",
-    question: "Can I integrate Xora with other platforms?",
+    question: "What technologies do you use for development?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "We use modern technologies like Next.js, React, Node.js, and secure databases with scalable backend architecture. The admin panel is built to be user-friendly and fully customizable.",
   },
   {
     id: "2",
-    question: "How often do you add new content?",
+    question: "Will I be able to manage the website on my own?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes, we provide comprehensive training and documentation to help you manage your website independently. Our user-friendly admin panel is designed for ease of use.",
   },
   {
     id: "3",
     question: "What your refund policy?",
-    answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
-  },
-  {
-    id: "4",
-    question: "Do you have corporate plans?",
-    answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
-  },
-  {
-    id: "5",
-    question: "What happens when I’m out of storage?",
-    answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
-  },
-  {
-    id: "6",
-    question: "Can I upgrade my plan?",
-    answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
-  },
-  {
-    id: "7",
-    question: "How do I invite my team?",
-    answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
-  },
-  {
-    id: "8",
-    question: "Do you offer training for individuals and teams?",
-    answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
-  },
-  {
-    id: "9",
-    question: "I’m locked out of my account what do I do?",
     answer:
       "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
   },
@@ -126,48 +90,21 @@ export const faq = [
 export const plans = [
   {
     id: "0",
-    title: "Core",
-    priceMonthly: 19,
-    priceYearly: 12,
-    caption: "Best for solo creators",
-    features: [
-      "100MB Cloud storage",
-      "100+ prompt templates",
-      "5 projects",
-      "24/7 support",
-    ],
-    icon: "/images/circle.svg",
-    logo: "/images/plan-1.png",
+    priceMonthly: 0,
+    priceYearly: 19,
+    caption: "Happy Clients",
   },
   {
     id: "1",
-    title: "Overdrive",
-    priceMonthly: 79,
-    priceYearly: 59,
-    caption: "Most popular plan",
-    features: [
-      "All Starter features",
-      "1TB additional storage",
-      "Unlimited projects",
-      "Analytics",
-    ],
-    icon: "/images/triangle.svg",
-    logo: "/images/plan-2.png",
+    priceMonthly: 0,
+    priceYearly: 2000,
+    caption: "Hours of Supports",
   },
   {
     id: "2",
-    title: "Team",
     priceMonthly: 39,
     priceYearly: 29,
-    caption: "Exclusively for teams",
-    features: [
-      "All Overdrive features",
-      "10TB additional storage",
-      "50% off per member",
-      "Real-time collaboration",
-    ],
-    icon: "/images/hexagon.svg",
-    logo: "/images/plan-3.png",
+    caption: "Projects Completed",
   },
 ];
 

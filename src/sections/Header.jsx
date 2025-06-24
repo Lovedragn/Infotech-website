@@ -36,7 +36,7 @@ const Header = () => {
     <header
       className={clsx(
         "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
-        hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px] md:rounded-full md:scale-75 ",
+        hasScrolled && "py-2 bg-black-100 backdrop-blur-[8px] md:rounded-full md:scale-[90%]",
       )}
     >
       <div className="container flex h-14 items-center max-lg:px-5">

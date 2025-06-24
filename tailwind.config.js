@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       animation:{
-        marquee : "marquee 10s linear infinite",
+        marquee : "marquee 35s linear infinite ",
       },
       colors: {
         p1: "#2EF2FF",
@@ -59,12 +59,13 @@ export default {
         640: "640px",
         960: "960px",
         1230: "1230px",
-      },keyframes:{
+      },keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(-100%)' },
         },
       },
+
       zIndex: {
         1: "1",
         2: "2",

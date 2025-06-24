@@ -7,7 +7,7 @@ const Features = () => {
     <section>
       <Element name="features">
         <div className="container">
-          <div className="relative flex md:flex-wrap flex-nowrap border-2 border-s3 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3 scale-75">
+          <div className="relative flex md:flex-wrap flex-nowrap border-2 border-s3 rounded-7xl md:overflow-hidden max-md:flex-col feature-after md:g7 max-md:border-none max-md:rounded-none max-md:gap-3 scale-[90%]">
             {/* Feature Cards */}
             {features.map(({ id ,caption, title, text, button }) => (
               <div
@@ -49,25 +49,26 @@ const Features = () => {
             </ul>
 
             {/* Mobile: marquee */}
-            <ul className="md:hidden flex items-center gap-6 pt-10 pb-10 animate-marquee ">
-              <div className="flex justify-center w-full gap-6">
-                {details.map(({ id, icon, title }) => (
-                  <li
-                    key={id}
-                    className="inline-block w-[65vw] aspect-square  pt-4 px-8 pb-4 border-2 border-s3 rounded-3xl"
-                  >
-                    <div className="flex items-center justify-center mx-auto mb-3 border-2 border-s2 rounded-full hover:border-s4 transition-all duration-500 shadow-500 w-20 h-20 overflow-hidden">
-                      <img
-                        src={icon}
-                        alt={title}
-                        className="w-full h-full object-contain z-20"
-                      />
-                    </div>
-                    <h3 className="text-center uppercase text-xs">{title}</h3>
-                  </li>
+            <ul className="md:hidden overflow-hidden w-full relative py-10">
+              <div className="flex w-max animate-marquee gap-6">
+                {[...details, ...details].map(({ id, icon, title }, index) => (
+                    <li
+                        key={id + '-' + index}
+                        className="inline-block w-[45vw] aspect-square pt-2 px-4 pb-2 border-2 border-s3 rounded-3xl shrink-0"
+                    >
+                      <div className="flex items-center justify-center mx-auto mb-3 border-2 border-s2 rounded-full hover:border-s4 transition-all duration-500 shadow-500 w-20 h-20 overflow-hidden">
+                        <img
+                            src={icon}
+                            alt={title}
+                            className="w-full h-full object-contain z-20"
+                        />
+                      </div>
+                      <h3 className="text-center uppercase text-xs">{title}</h3>
+                    </li>
                 ))}
               </div>
             </ul>
+
           </div>
         </div>
       </Element>

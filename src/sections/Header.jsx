@@ -1,6 +1,8 @@
 import { Link as LinkScroll } from "react-scroll";
+
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import Faq from "./Faq.jsx";
 
 const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -41,7 +43,7 @@ const Header = () => {
     >
       <div className="container flex h-14 items-center max-lg:px-5">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
-          <img src="/favicon.png" width={115} height={55} alt="logo" className="scale-[40%]"/>
+          <img src="/favicon.png" width={115} height={55} alt="logo" className="scale-[40%]  brightness-150 "/>
         </a>
 
         <div
@@ -66,7 +68,7 @@ const Header = () => {
                     spy
                     smooth
                     className={clsx(
-                      "max-lg:hidden transition-transform duration-500 cursor-pointer",
+                      "max-lg:hidden brightness-150 transition-transform duration-500 cursor-pointer",
                     )}
                   >
                     <img
@@ -80,7 +82,8 @@ const Header = () => {
                 </li>
 
                 <li className="nav-li">
-                  <NavLink title="faq" />
+                    <NavLink title="faq" />
+
                   <div className="dot" />
                   <NavLink title="Contact Us" />
                 </li>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { courses, quotes, instagramUrl } from "../constants/index.jsx";
 
 const courseIcons = {
   AWS: (
@@ -36,29 +37,6 @@ const courseIcons = {
   ),
 };
 
-const courses = [
-  { name: "AWS", image: "/images/gallary/gallery-1.png" },
-  { name: "DevOps", image: "/images/gallary/gallery-2.png" },
-  { name: "Python", image: "/images/gallary/gallery-3.png" },
-  { name: "Full Stack", image: "/images/gallary/gallery-4.png" },
-  { name: "Database", image: "/images/gallary/gallery-5.png" },
-  { name: "Backend Development", image: "/images/gallary/gallery-6.png" },
-  { name: "Frontend Development", image: "/images/gallary/gallery-7.png" },
-  { name: "Excel", image: "/images/plan-1.png" },
-  { name: "PowerBI", image: "/images/plan-2.png" },
-  { name: "Cyber Security", image: "/images/plan-3.png" },
-  { name: "UI/UX", image: "/images/testimonials/alicia-barker.png" },
-];
-
-const quotes = [
-  "Empowering the next generation of tech leaders.",
-  "Learn. Build. Innovate.",
-  "Your journey to tech mastery starts here.",
-  "Unlock your potential with our expert-led courses.",
-];
-
-const instagramUrl = "https://www.instagram.com/techinta_/";
-
 const Course = () => {
   const [quoteIdx, setQuoteIdx] = useState(0);
 
@@ -76,11 +54,11 @@ const Course = () => {
         <div className="text-lg text-[#2ae2ff] text-center mb-8 min-h-[32px] transition-all duration-700 animate-fadeIn">
           {quotes[quoteIdx]}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
           {courses.map((course, idx) => (
             <div
               key={course.name}
-              className="w-full aspect-[16/9] rounded-2xl overflow-visible flex flex-col items-center justify-center group relative transition-all duration-500 p-2 sm:p-4"
+              className="w-full aspect-square sm:aspect-[16/9] rounded-2xl overflow-visible flex flex-col items-center justify-center group relative transition-all duration-500 p-2 sm:p-4"
             >
               {courseIcons[course.name] || (
                 <img

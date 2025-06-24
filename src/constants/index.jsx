@@ -216,6 +216,7 @@ export const projects = [
   { id: 6, images: "/images/gallary/gallery-7.jpg" },
 ];
 
+
 export const courses = [
   { name: "AWS", image: "/images/gallary/gallery-1.png" },
   { name: "DevOps", image: "/images/gallary/gallery-2.png" },
@@ -230,9 +231,11 @@ export const courses = [
   { name: "UI/UX", image: "/images/testimonials/alicia-barker.png" },
 ];
 
-export const courseQuotes = [
+export const quotes = [
   "Empowering the next generation of tech leaders.",
   "Learn. Build. Innovate.",
   "Your journey to tech mastery starts here.",
   "Unlock your potential with our expert-led courses.",
 ];
+
+export const instagramUrl = "https://www.instagram.com/techinta_/";

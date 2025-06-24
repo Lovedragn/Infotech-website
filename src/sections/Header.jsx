@@ -23,7 +23,7 @@ const Header = () => {
 
     return (
         <Link
-            to={`/${path}`} // navigates to /faq or /contact-us
+            to={`/${path}`}
             onClick={() => setIsOpen(false)}
             className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h5"
         >
@@ -40,8 +40,9 @@ const Header = () => {
       )}
     >
       <div className="container flex h-14 items-center max-lg:px-5">
-        <Link to="/" className="lg:hidden flex-1 cursor-pointer z-2">
-          <img src="/favicon.png" width={115} height={55} alt="logo" className="scale-[40%]  brightness-150 "/>
+        <Link to="/" className="lg:hidden flex-1 flex items-center gap-2 cursor-pointer z-2">
+          <img src="/favicon.png" width={40} height={40} alt="TECHINTA logo" className="brightness-150" />
+          <span className="font-extrabold text-xl tracking-widest text-p4">TECHINTA</span>
         </Link>
 
         <div
@@ -62,16 +63,17 @@ const Header = () => {
                 <li className="nav-logo">
                   <Link to="/"
                     className={clsx(
-                      "max-lg:hidden brightness-150 transition-transform duration-500 cursor-pointer",
+                      "max-lg:hidden flex items-center gap-2 brightness-150 transition-transform duration-500 cursor-pointer",
                     )}
                   >
                     <img
                       src="/favicon.png"
-                      className="scale-[40%]"
-                      width={160}
-                      height={55}
-                      alt="logo"
+                      className=""
+                      width={48}
+                      height={48}
+                      alt="TECHINTA logo"
                     />
+                    <span className="font-extrabold text-2xl tracking-widest text-p4">TECHINTA</span>
                   </Link>
                 </li>
 

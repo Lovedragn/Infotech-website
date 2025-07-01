@@ -17,7 +17,7 @@ const AutoSlider = ({ items, interval = 3000 }) => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center py-10">
-      <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg overflow-hidden rounded-2xl shadow-lg bg-white/10">
+      <div className="w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-3xl xl:max-w-4xl overflow-hidden rounded-2xl shadow-lg bg-white/10">
         <div
           ref={sliderRef}
           className="flex transition-transform duration-700 ease-in-out"

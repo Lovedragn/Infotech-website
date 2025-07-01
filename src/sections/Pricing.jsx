@@ -3,27 +3,36 @@ import {useState} from "react";
 import clsx from "clsx";
 import CountUp from "react-countup";
 import {plans} from "../constants/index.jsx";
-import Button from "../components/Button.jsx";
 import AutoSlider from "../components/AutoSlider.jsx";
 
 const sliderItems = [
   {
     image: "/images/testimonials/alicia-barker.png",
-    name: "Alicia Barker",
-    role: "Designer",
-    text: "Alicia's testimonial goes here."
+    name: "KLean Klub",
+    role: "Ceo & Founder",
+    text: "The team delivered a clean, user-friendly storefront that perfectly represents our home care brand. Their intuitive admin panel makes managing products, orders, and inventory a breeze. I couldn't be happier with how seamless everything is!"
   },
   {
     image: "/images/testimonials/becky-snider.png",
-    name: "Becky Snider",
-    role: "Developer",
-    text: "Becky's testimonial goes here."
+    name: "Studi06Kovai",
+    role: "Studio Owner",
+    text: "Studi06 Covai now shines online thanks to their elegant design and efficient booking system. It's significantly boosted our studio's engagement and made client scheduling intuitive. Their hands-on support and prompt follow-up during launch were exceptional."
   },
   {
     image: "/images/testimonials/jessica-saunders.png",
-    name: "Jessica Saunders",
-    role: "Manager",
-    text: "Jessica's testimonial goes here."
+    name: "Aadhithyan Software Solutions",
+    role: "Director",
+    text: "Our custom B2B software portal was delivered on time with sophisticated search and analytics features that meet our exacting standards. The development team was professional and responsive, delivering a robust web solution that drives our business processes."
+  },{
+    image: "/images/testimonials/jessica-saunders.png",
+    name: "Sai Shankara Fashions",
+    role: "Director",
+    text: "We needed a fashion-forward website that reflects our brand aesthetic — and they nailed it. The digital storefront is stylish, responsive, and easy to update. Customers keep complimenting how beautifully it looks across devices"
+  },{
+    image: "/images/testimonials/jessica-saunders.png",
+    name: "Riya Connects",
+    role: "Founder",
+    text: "Our professional services site from Riya Connects is clean, fast, and effectively communicates our value. The site is easy to manage and the onboarding support was excellent. We've seen a noticeable uptick in service inquiries since launch"
   },
 ];
 

@@ -1,9 +1,9 @@
 export const features = [
   {
     id: "0",
-    caption: "Easy integration",
-    title: "Work smarter not harder",
-    text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
+    caption: "Effortless onboarding",
+    title: "Work smarter, scale faster",
+    text: "At Techinta, we eliminate the grunt work. Automation and intelligent workflows elevate your productivity without burning you out. It’s like adding a co-pilot to your team.",
     button: {
       icon: "/images/magictouch.svg",
       title: "Watch the demo",
@@ -11,16 +11,15 @@ export const features = [
   },
   {
     id: "1",
-    caption: "Secure & trustworthy",
-    title: "Sleep easy, we got your back",
-    text: "Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.",
+    caption: "Security you can trust",
+    title: "Production ready, rock solid",
+    text: "Your data stays yours—always. Techinta employs cutting-edge encryption and privacy-first engineering to lock down your assets tighter than Fort Knox on a snow day.",
     button: {
       icon: "/images/docs.svg",
       title: "Read the docs",
     },
   },
 ];
-
 export const details = [
   {
     id: "0",
@@ -119,15 +118,15 @@ export const testimonials = [
     role: "Globalnomads",
     avatarUrl: "/images/testimonials/jessica-saunders.png",
     comment:
-      "Xora's customer support is second to none! They're like my tech superheroes, always there when I need them.",
+      "Techinta’s support team is next-level—think digital guardians who never sleep. Every query, handled with precision and speed.",
   },
   {
     id: "1",
     name: "Mark Erixon",
-    role: "Vid capital intl",
+    role: "Vid Capital Intl",
     avatarUrl: "/images/testimonials/mark-erixon.png",
     comment:
-      "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
+      "From skeptic to superfan—Techinta has become the backbone of our content strategy. It’s simply indispensable.",
   },
   {
     id: "2",
@@ -135,7 +134,7 @@ export const testimonials = [
     role: "Cyberleap",
     avatarUrl: "/images/testimonials/melanie-hurst.png",
     comment:
-      "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
+      "Seamless integration, zero friction. Techinta just *gets* what modern teams need and delivers it effortlessly.",
   },
   {
     id: "3",
@@ -143,7 +142,7 @@ export const testimonials = [
     role: "Cyberleap",
     avatarUrl: "/images/testimonials/alicia-barker.png",
     comment:
-      "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
+      "With Techinta’s predictive analytics, we’re not just responding to trends—we’re anticipating them. It’s business foresight made practical.",
   },
 ];
 
